@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <script src="script.js"> </script>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <header class="tituloprincipal">
+        <h1>Conversor Monetário</h1>
+    </header>
+
+        <section class="corpo">
+
+            <section class="parte1">      
+                <section class = "tituloquantidade">
+
+                    <h4>Quantidade:</h4>
+
+                </section>
+
+                <section class="quantidade">        
+
+                    <div class="bandeira1"></div>
+                    <label for="selectFrom"></label>
+                    <select id="selectFrom"></select>
+
+                    <label for="valor"></label> 
+                    <input  oninput="convert()" type="number" id="input">
+
+                </section>
+            </section>
+                
+                   
+        
+                <section class="botao"> 
+                    <button class="botao2" onclick="reverse()">reverse</button> 
+                </section>
+
+                <section class="linha">
+                    <hr>
+                </section>
+
+            <section class="parte2">
+                <section class = "tituloconversao">
+
+                    <h4>Conversão:</h4>
+
+                </section>
+
+                <section class="conversao">
+
+                    <div class="bandeira2"></div>
+                    <label for="selectFrom2"></label>
+                    <select id="selectFrom2">
+
+                    <label for="valor"></label> 
+                    <input readonly type="number" id="input2">
+                    
+                </section>
+            </section>  
+                
+        </section>
+        
+   
+</body>     
+</html>
+
