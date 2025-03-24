@@ -169,9 +169,9 @@ window.onload = async function (){
     let keys = Object.keys(jsonData.conversion_rates);
     console.log(jsonData)
 
-    var select = document.getElementById("selectFrom");
+    var select = document.getElementById("select");
     
-    var select2 = document.getElementById("selectFrom2");
+    var select2 = document.getElementById("select2");
     
     keys.forEach(key => {
         var option = document.createElement('option');
@@ -192,14 +192,14 @@ window.onload = async function (){
 
 function SetFlagCima() 
 {
-    const select = document.getElementById("selectFrom");
+    const select = document.getElementById("select");
 
     document.getElementById("bandeiraCima").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
 }
 
 function SetFlagBaixo() 
 {
-    const select = document.getElementById("selectFrom2");
+    const select = document.getElementById("select2");
 
     document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
 }
@@ -210,8 +210,8 @@ function SetFlagBaixo()
 
 async function convert(){
     
-    let moeda1 = document.getElementById("selectFrom").value;
-    let moeda2 = document.getElementById("selectFrom2").value;
+    let moeda1 = document.getElementById("select").value;
+    let moeda2 = document.getElementById("select2").value;
     
     let input1 = document.getElementById("input").value;
     
@@ -225,11 +225,13 @@ async function convert(){
 
 
 function reverse(){
-    let moeda1 = document.getElementById("selectFrom").value;
-    let moeda2 = document.getElementById("selectFrom2").value;
-    document.getElementById("selectFrom2").value = moeda1;
-    document.getElementById("selectFrom").value = moeda2;
+    let moeda1 = document.getElementById("select").value;
+    let moeda2 = document.getElementById("select2").value;
+    document.getElementById("select2").value = moeda1;
+    document.getElementById("select").value = moeda2;
 
     document.getElementById("input").value = 1;
-    convert()
+    convert();
+    SetFlagBaixo();
+    SetFlagCima();
 }
