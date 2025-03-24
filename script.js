@@ -3,7 +3,7 @@ let g_dictionary = {
     "AFN": "AF", // Afghan Afghani
     "ALL": "AL", // Albanian Lek
     "AMD": "AM", // Armenian Dram
-    "ANG": "AN", // Armenian Dram
+    "ANG": "AN", 
     "AOA": "AO", // Angolan Kwanza
     "ARS": "AR", // Argentine Peso
     "AUD": "AU", // Australian Dollar
@@ -45,8 +45,10 @@ let g_dictionary = {
     "EUR": "EU", // Euro
     "FJD": "FJ", // Fijian Dollar
     "FKP": "FK", // Falkland Islands Pound
+    "FOK": "FK", // Faroese Krona
     "GBP": "GB", // British Pound Sterling
     "GEL": "GE", // Georgian Lari
+    "GGP": "GG", // Georgian Lari
     "GHS": "GH", // Ghanaian Cedi
     "GIP": "GI", // Gibraltar Pound
     "GMD": "GM", // Gambian Dalasi
@@ -60,16 +62,19 @@ let g_dictionary = {
     "HUF": "HU", // Hungarian Forint
     "IDR": "ID", // Indonesian Rupiah
     "ILS": "IL", // Israeli New Shekel
+    "IMP": "IM", // Israeli New Shekel
     "INR": "IN", // Indian Rupee
     "IQD": "IQ", // Iraqi Dinar
     "IRR": "IR", // Iranian Rial
     "ISK": "IS", // Icelandic Króna
+    "JEP": "JE", // Icelandic Króna
     "JMD": "JM", // Jamaican Dollar
     "JOD": "JO", // Jordanian Dinar
     "JPY": "JP", // Japanese Yen
     "KES": "KE", // Kenyan Shilling
     "KGS": "KG", // Kyrgyzstani Som
     "KHR": "KH", // Cambodian Riel
+    "KID": "KI", // Kiribation Dolar
     "KMF": "KM", // Comorian Franc
     "KPW": "KP", // North Korean Won
     "KRW": "KR", // South Korean Won
@@ -122,6 +127,7 @@ let g_dictionary = {
     "SEK": "SE", // Swedish Krona
     "SGD": "SG", // Singapore Dollar
     "SHP": "SH", // Saint Helena Pound
+    "SLE": "SL", // Sierra Leonean Leone
     "SLL": "SL", // Sierra Leonean Leone
     "SOS": "SO", // Somali Shilling
     "SRD": "SR", // Surinamese Dollar
@@ -136,6 +142,7 @@ let g_dictionary = {
     "TOP": "TO", // Tongan Paʻanga
     "TRY": "TR", // Turkish Lira
     "TTD": "TT", // Trinidad and Tobago Dollar
+    "TVD": "TV", // Tuvalu
     "TWD": "TW", // New Taiwan Dollar
     "TZS": "TZ", // Tanzanian Shilling
     "UAH": "UA", // Ukrainian Hryvnia
@@ -157,7 +164,7 @@ let g_dictionary = {
     "ZMW": "ZM", // Zambian Kwacha
     "ZWL": "ZW" // Zimbabwean Dollar
 };
-const apiKey = "5268dc5ccc0bc55f13ce2861";
+const apiKey = "b350ba74dee9117058ac7dd0";
 
 
 window.onload = async function (){
