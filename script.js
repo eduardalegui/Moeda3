@@ -213,9 +213,9 @@ function SetFlagBaixo()
 
 
 
-    
-
 async function convert(){
+    
+    
     
     let moeda1 = document.getElementById("select").value;
     let moeda2 = document.getElementById("select2").value;
