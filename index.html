@@ -35,7 +35,7 @@
                         <img id="bandeiraCima">
                     </div>
                     <label for="selectFrom"></label>
-                    <select id="selectFrom"></select>
+                    <select onchange="SetFlagCima()" id ="selectFrom"></select>                
 
                     <label for="valor"></label> 
                     <input  oninput="convert()" type="number" id="input">
@@ -66,7 +66,7 @@
                         <img id="bandeiraBaixo">
                     </div>
                     <label for="selectFrom2"></label>
-                    <select id="selectFrom2">
+                    <select onchange= "SetFlagBaixo()" id="selectFrom2"></select>
 
                     <label for="valor"></label> 
                     <input readonly type="number" id="input2">
