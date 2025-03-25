@@ -202,6 +202,7 @@ function SetFlagCima()
     const select = document.getElementById("select");
 
     document.getElementById("bandeiraCima").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
+    convert()
 }
 
 function SetFlagBaixo() 
@@ -209,6 +210,7 @@ function SetFlagBaixo()
     const select = document.getElementById("select2");
 
     document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
+    convert()
 }
 
 
@@ -232,13 +234,16 @@ async function convert(){
 
 
 function reverse(){
+    input1 = document.getElementById("input").value 
+    
     let moeda1 = document.getElementById("select").value;
     let moeda2 = document.getElementById("select2").value;
     document.getElementById("select2").value = moeda1;
     document.getElementById("select").value = moeda2;
 
-    document.getElementById("input").value = 1;
-    convert();
+
+    document.getElementById("input").value = input1;
+   
     SetFlagBaixo();
     SetFlagCima();
 }
