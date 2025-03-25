@@ -16,71 +16,68 @@
 
 
 <body>
-
-    <header class="tituloprincipal">
-        <h1>Conversor Monetário</h1>
-    </header>
-
-        <section class="corpo">
-
-            <section class="parte1">      
-                <section class = "tituloquantidade">
-
-                    <h4>Quantidade:</h4>
-
-                </section>
-
-                <section class="quantidade">        
-
-                    <div class="bandeira1">
-                        <img id="bandeiraCima">
-                    </div>
-                    <label for="select"></label>
-                    <select onchange="SetFlagCima()" id ="select"></select>                
-
-                    <label for="valor"></label> 
-                    <input  oninput="convert()" type="number" min="0" onkeypress="if(event.key === '-') event.preventDefault();" id="input">
-
-                </section>
-            </section>
-                
-                   
+    <div class="container">
         
-                <section class="botao"> 
-                    <button class="botao2" onclick="reverse()">
-                        <span class="material-symbols-outlined">
-                            swap_vert
-                            </span>
-                    </button> 
+        <header class="tituloprincipal">
+            <h1>Conversor Monetário</h1>
+        </header>
+
+            <section class="corpo">
+
+                <section class="parte1">      
+                    <section class = "tituloquantidade">
+
+                        <h4>Quantidade:</h4>
+
+                    </section>
+
+                    <section class="quantidade">        
+                        <div class="bandeiraSelect">
+                        <div class="bandeira1" >
+                            <img id="bandeiraCima">
+                        </div>
+                        <select onchange="SetFlagCima()" id ="select"></select>                
+                        </div>
+                        <input  oninput="convert()" type="number" min="0" onkeypress="if(event.key === '-') event.preventDefault();" id="input">
+
+                    </section>
                 </section>
+                
+                    <section class="botao"> 
+                        <button class="botao2" onclick="reverse()">
+                            <span class="material-symbols-outlined">
+                                swap_vert
+                                </span>
+                        </button> 
+                    </section>
 
-                <section class="linha">
-                    <hr>
-                </section>
+                    <section class="linha">
+                        <hr>
+                    </section>
 
-            <section class="parte2">
-                <section class = "tituloconversao">
+                <section class="parte2">
+                    <section class = "tituloconversao">
 
-                    <h4>Conversão:</h4>
+                        <h4>Conversão:</h4>
 
-                </section>
+                    </section>
 
-                <section class="conversao">
+                    <section class="conversao">
 
-                    <div class="bandeira2">
-                        <img id="bandeiraBaixo">
-                    </div>
-                    <label for="select2"></label>
-                    <select onchange= "SetFlagBaixo()" id="select2"></select>
+                        <div class="bandeira2">
+                            <img id="bandeiraBaixo">
+                        </div>
+                        <label for="select2"></label>
+                        <select onchange= "SetFlagBaixo()" id="select2"></select>
 
-                    <label for="valor"></label> 
-                    <input readonly type="number" id="input2">
+                        <label for="valor"></label> 
+                        <input readonly type="number" id="input2">
+                        
+                    </section>
+                </section>  
                     
-                </section>
-            </section>  
-                
-        </section>
-        
+            </section>
+    </div>   
    
 </body>     
 </html>
