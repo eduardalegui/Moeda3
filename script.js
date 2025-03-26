@@ -201,16 +201,30 @@ function SetFlagCima()
 {
     const select = document.getElementById("select");
 
-    document.getElementById("bandeiraCima").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
-    convert()
+    if(g_dictionary[select.value] === "EU"){
+        document.getElementById("bandeiraCima").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
+        
+    }else{
+        document.getElementById("bandeiraCima").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
+        
+    }
+    convert();
 }
 
 function SetFlagBaixo() 
 {
     const select = document.getElementById("select2");
 
-    document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
-    convert()
+    
+    if(g_dictionary[select.value] === "EU"){
+        document.getElementById("bandeiraBaixo").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
+        
+    }else{
+        document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
+        
+    }
+    convert();
+    
 }
 
 
@@ -235,7 +249,7 @@ async function convert(){
 
 function reverse(){
     input1 = document.getElementById("input").value 
-    
+
     let moeda1 = document.getElementById("select").value;
     let moeda2 = document.getElementById("select2").value;
     document.getElementById("select2").value = moeda1;
@@ -243,7 +257,7 @@ function reverse(){
 
 
     document.getElementById("input").value = input1;
-   
+    
     SetFlagBaixo();
     SetFlagCima();
 }
