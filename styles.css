@@ -4,7 +4,6 @@
     box-sizing: border-box;
   }
 
-
 @media only screen and (min-width: 600px) {
     
     body{
@@ -18,8 +17,6 @@
         align-items: center;
         flex-direction: column;
         margin: center;
-        
-       
     }
 
     .tituloprincipal{
@@ -51,6 +48,7 @@
         margin-top: 20px;
         margin-left: 30px;
     }
+
     .quantidade{
         display: flex;
         flex-direction: row;
@@ -59,7 +57,6 @@
         margin-bottom: 22px;
         margin-top: 30px;
     }
-
 
     select{
         size-adjust: 40px;
@@ -73,7 +70,6 @@
         border-color:  rgb(255, 255, 255);
         border-style: solid;
         margin-left: 50px;
-
     }
 
     input{
@@ -106,7 +102,6 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         margin-top: 5px;
         position: absolute;
-        
     }
 
     .seta{
@@ -117,12 +112,9 @@
         border-radius: 50px;
     }
 
-
-
     .botao2{
         margin-left: 214px;
         position: absolute;
-        
     }
 
     .linha{
@@ -132,8 +124,8 @@
         justify-content: center;
         align-items: center;
         margin-top: 33px;
-        
     }
+
     .parte2{
         display: flex;
         flex-direction: column;
@@ -142,6 +134,7 @@
         margin-top: 20px;
         margin-left: 30px;
     }
+
     .conversao{
         display: flex;
         flex-direction: row;
@@ -149,8 +142,8 @@
         justify-content: center;
         margin-bottom: 30px;
         margin-top: 30px;
-
     }
+
     .bandeira1{
         width: 65px;
     }
@@ -158,6 +151,7 @@
     .bandeiraSelect {
         display: flex;
     }
+  
   }
 
   @media only screen and (max-width: 600px) {
@@ -173,8 +167,6 @@
         align-items: center;
         flex-direction: column;
         margin: center;
-        
-       
     }
 
     .tituloquantidade{
@@ -202,10 +194,10 @@
         box-shadow: 2px 2px 5px black;
     }
 
-    
     .bandeira1{
         width: 65px;
     }
+
     .bandeira2{
         width: 65px;
     }
@@ -221,6 +213,7 @@
         justify-content: center;
         margin-top: 20px;
     }
+
     .quantidade{
         display: flex;
         flex-direction: column;
@@ -230,7 +223,6 @@
         margin-bottom: 10px;
         margin-top: 20px;
     }
-
 
     select{
         size-adjust: 40px;
@@ -244,7 +236,6 @@
         border-color:  rgb(255, 255, 255);
         border-style: solid;
         margin-left: 10px;
-
     }
 
     input{
@@ -277,7 +268,6 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         margin-top: 14px;
         position: absolute;
-        
     }
 
     .seta{
@@ -285,16 +275,12 @@
         height: 60px;
         background-size: cover; /* Ajusta o tamanho */
         background-position: center; /* Centraliza a imagem */
-        
         border-radius: 50px;
     }
 
-
-
     .botao2{
         margin-left: 145px;
-        position: absolute;
-        
+        position: absolute; 
     }
 
     .linha{
@@ -303,13 +289,13 @@
         height: 2px; /* Define a altura */
         justify-content: center;
         align-items: center;
-        margin-top: 43px;
-
-        
+        margin-top: 43px;        
     }
+
     .tituloconversao{
         margin-left: 30px;
     }
+
     .parte2{
         display: flex;
         flex-direction: column;
@@ -326,6 +312,5 @@
         margin-bottom: 10px;
         margin-top: 20px;
     }
-
 
   }
