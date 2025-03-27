@@ -1,4 +1,4 @@
-let g_dictionary = {
+let flag_dictionary = {
     "AED": "AE", // United Arab Emirates Dirham
     "AFN": "AF", // Afghan Afghani
     "ALL": "AL", // Albanian Lek
@@ -201,14 +201,14 @@ function SetFlagCima()
 {
     const select = document.getElementById("select");
 
-    document.getElementById("bandeiraCima").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
+    document.getElementById("bandeiraCima").src = `https://flagsapi.com/${flag_dictionary[select.value]}/flat/64.png`;
     convert();
 }
 
 function SetFlagBaixo() 
 {
     const select = document.getElementById("select2");
-    document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
+    document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${flag_dictionary[select.value]}/flat/64.png`;
 
     convert();
     
@@ -217,8 +217,6 @@ function SetFlagBaixo()
 
 
 async function convert(){
-    
-    
     
     let moeda1 = document.getElementById("select").value;
     let moeda2 = document.getElementById("select2").value;
