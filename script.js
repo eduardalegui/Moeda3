@@ -201,28 +201,15 @@ function SetFlagCima()
 {
     const select = document.getElementById("select");
 
-    if(g_dictionary[select.value] === "EU"){
-        document.getElementById("bandeiraCima").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
-        
-    }else{
-        document.getElementById("bandeiraCima").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
-        
-    }
+    document.getElementById("bandeiraCima").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
     convert();
 }
 
 function SetFlagBaixo() 
 {
     const select = document.getElementById("select2");
+    document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
 
-    
-    if(g_dictionary[select.value] === "EU"){
-        document.getElementById("bandeiraBaixo").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
-        
-    }else{
-        document.getElementById("bandeiraBaixo").src = `https://flagsapi.com/${g_dictionary[select.value]}/flat/64.png`;
-        
-    }
     convert();
     
 }
